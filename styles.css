@@ -1,0 +1,529 @@
+*::-moz-selection {
+  background: rgba(34, 85, 104, 0.5);
+}*::selection {
+  background: rgba(34, 85, 104, 0.5);
+}
+
+body {
+  font-family: "Vollkorn", serif;
+  background: url("../IMG/fondo1.jpg") fixed center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+body .overlay {
+  width: 1%;
+  height: 1%;
+  border-radius: 1px;
+  background: url("../IMG/fondo2.jpg") fixed center no-repeat;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+body .overlay > :nth-child(1) {
+  display: none;
+}
+body .overlay.open {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  background: url("../IMG/fondo2.jpg") fixed center no-repeat;
+  background-size: cover;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-content: center;
+  gap: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body .overlay.open > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 104px;
+  gap: 40px;
+}
+body .overlay.open > :nth-child(1) a, body .overlay.open > :nth-child(1) h3 {
+  all: unset;
+  color: #E4E4E6;
+  cursor: pointer;
+}
+body .overlay.open > :nth-child(1) h2 {
+  font-weight: 100;
+  font-size: 100px;
+  letter-spacing: 3px;
+  mix-blend-mode: overlay;
+}
+body .overlay.open > :nth-child(1) > :nth-child(1) h2 {
+  color: white;
+}
+body .overlay.open > :nth-child(1) > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+body .overlay.open > :nth-child(1) > :nth-child(3) h2 {
+  color: black;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  z-index: 1002;
+}
+body main header {
+  width: 95.5%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+body main header > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+body main header > :nth-child(1) h1 {
+  font-weight: 100;
+  font-size: 17px;
+  color: #E4E4E6;
+}
+body main header > :nth-child(1) h1::-moz-selection {
+  background: #E4E4E6;
+}
+body main header > :nth-child(1) h1::selection {
+  background: #E4E4E6;
+}
+body main header > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main header > :nth-child(2) > :nth-child(1) h3 {
+  font-size: 15px;
+  color: #1C1C22;
+}
+body main header > :nth-child(2) > :nth-child(1) h3::-moz-selection, body main header > :nth-child(2) > :nth-child(1) br::-moz-selection {
+  background: rgba(34, 85, 104, 0.5);
+}
+body main header > :nth-child(2) > :nth-child(1) h3::selection, body main header > :nth-child(2) > :nth-child(1) br::selection {
+  background: rgba(34, 85, 104, 0.5);
+}
+body main header > :nth-child(2) .burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 2.5px;
+  text-align: right;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-content: center;
+  height: 20px;
+  margin-top: -1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+body main header > :nth-child(2) .burger > :nth-child(1), body main header > :nth-child(2) .burger > :nth-child(2), body main header > :nth-child(2) .burger > :nth-child(3) {
+  border-top: 2px solid #225568;
+  background: #225568;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+body main header > :nth-child(2) .burger > :nth-child(1), body main header > :nth-child(2) .burger > :nth-child(2) {
+  width: 65px;
+}
+body main header > :nth-child(2) .burger > :nth-child(3) {
+  width: 40px;
+  margin-left: 25px;
+}
+body main header > :nth-child(2) .burger.middleOpen > :nth-child(1), body main header > :nth-child(2) .burger.middleOpen > :nth-child(3) {
+  width: 65px;
+  margin: 0;
+}
+body main header > :nth-child(2) .burger.middleOpen > :nth-child(2) {
+  width: 40px;
+  margin-left: 25px;
+}
+body main header > :nth-child(2) .burger.open {
+  gap: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 65px;
+  margin: 0;
+}
+body main header > :nth-child(2) .burger.open > :nth-child(1), body main header > :nth-child(2) .burger.open > :nth-child(2) {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 35px;
+  border-top: 2px solid #E4E4E6;
+  background: #E4E4E6;
+  margin: 0;
+}
+body main header > :nth-child(2) .burger.open > :nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+body main header > :nth-child(2) .burger.open > :nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+body main header > :nth-child(2) .burger.open > :nth-child(3) {
+  display: none;
+}
+body main header.open > :nth-child(2) > :nth-child(1) {
+  visibility: hidden;
+  opacity: 0;
+}
+
+body main section {
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: -10px;
+}
+body main section > :nth-child(1) {
+  width: 91%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main section > :nth-child(1) > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main section > :nth-child(1) > :nth-child(1) h2 {
+  font-weight: 100;
+  line-height: 24px;
+  font-size: 17px;
+  color: #E4E4E6;
+}
+body main section > :nth-child(1) > :nth-child(1) h2::-moz-selection, body main section > :nth-child(1) > :nth-child(1) br::-moz-selection {
+  background: #E4E4E6;
+}
+body main section > :nth-child(1) > :nth-child(1) h2::selection, body main section > :nth-child(1) > :nth-child(1) br::selection {
+  background: #E4E4E6;
+}
+body main section > :nth-child(1) > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main section > :nth-child(1) > :nth-child(2) .right-top {
+  font-size: 11px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  margin-right: -15px;
+}
+body main section > :nth-child(1) > :nth-child(2) .right-top svg {
+  margin-top: -50px;
+}
+body main section > :nth-child(1) > :nth-child(2) .right-top svg text {
+  -webkit-transform: translateX(150px) rotate(75deg);
+          transform: translateX(150px) rotate(75deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  letter-spacing: 0.7px;
+}
+body main section > :nth-child(1) > :nth-child(2) > :nth-child(2) {
+  width: 100%;
+  max-width: 155px;
+}
+body main section > :nth-child(1) > :nth-child(2) > :nth-child(2) img {
+  width: 100%;
+}
+body main section.open {
+  visibility: hidden;
+  opacity: 0;
+}
+
+body .ceroSix {
+  z-index: 1000;
+  position: absolute;
+  top: 44%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-transform: rotate(-90deg) translateY(-12px);
+          transform: rotate(-90deg) translateY(-12px);
+}
+body .ceroSix h5 {
+  color: #E4E4E6;
+  font-size: 14px;
+  font-weight: 100;
+}
+body .ceroSix h5::-moz-selection {
+  background: #E4E4E6;
+}
+body .ceroSix h5::selection {
+  background: #E4E4E6;
+}
+body .ceroSix > :nth-child(2) {
+  width: 50px;
+  height: 1.5px;
+  background: #E4E4E6;
+}
+
+body article {
+  z-index: 999;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-content: center;
+}
+body article > :nth-child(1), body article > :nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  z-index: 999;
+}
+body article > :nth-child(1) h2, body article > :nth-child(3) h2 {
+  font-weight: 100;
+  font-size: 100px;
+  letter-spacing: 3px;
+}
+body article > :nth-child(1) {
+  margin-right: -60px;
+  mix-blend-mode: soft-light;
+}
+body article > :nth-child(1) h2 {
+  color: #E4E4E6;
+}
+body article > :nth-child(1) h2::-moz-selection {
+  background: #E4E4E6;
+}
+body article > :nth-child(1) h2::selection {
+  background: #E4E4E6;
+}
+body article > :nth-child(2) {
+  width: 100%;
+  max-width: 310px;
+  z-index: 998;
+}
+body article > :nth-child(2) img {
+  width: 100%;
+}
+body article > :nth-child(2) figcaption {
+  font-size: 13px;
+  display: inline-block;
+  -webkit-transform: rotate(-90deg) translateY(-75px) translateX(90px);
+          transform: rotate(-90deg) translateY(-75px) translateX(90px);
+  color: #E4E4E6;
+}
+body article > :nth-child(2) figcaption span {
+  letter-spacing: -2px;
+  margin-right: 2px;
+}
+body article > :nth-child(2) figcaption::-moz-selection, body article > :nth-child(2) span::-moz-selection, body article > :nth-child(2) br::-moz-selection {
+  background: #E4E4E6;
+}
+body article > :nth-child(2) figcaption::selection, body article > :nth-child(2) span::selection, body article > :nth-child(2) br::selection {
+  background: #E4E4E6;
+}
+body article > :nth-child(3) {
+  color: #1C1C22;
+  margin-left: -80px;
+}
+body article.open {
+  display: none;
+}
+
+body footer {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: -120px;
+  z-index: 1000;
+}
+body footer > :nth-child(1) {
+  width: 91.45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body footer > :nth-child(1) > :nth-child(1) {
+  width: 100%;
+  max-width: 25px;
+  cursor: pointer;
+  margin-bottom: -70px;
+}
+body footer > :nth-child(1) > :nth-child(1) img {
+  width: 100%;
+}
+body footer > :nth-child(1) > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-right: 55px;
+}
+body footer > :nth-child(1) > :nth-child(2) p {
+  line-height: 18px;
+  font-size: 13px;
+}
+body footer.open {
+  visibility: hidden;
+  opacity: 0;
+}
